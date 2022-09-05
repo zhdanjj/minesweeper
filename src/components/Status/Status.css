@@ -1,0 +1,19 @@
+.Status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 30px;
+}
+
+.Status__minesLeft {
+  width: 100px;
+}
+
+.Status__btnGame {
+  font-size: inherit;
+  background: transparent;
+  border: 1px solid #181717;
+  border-radius: 4px;
+  cursor: pointer;
+}

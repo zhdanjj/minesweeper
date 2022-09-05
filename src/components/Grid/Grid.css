@@ -1,0 +1,43 @@
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(var(--width), min-content);
+  justify-content: center;
+  gap: 4px;
+}
+
+.GridCell {
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid #fff; */
+  background: #2f343e;
+  border-radius: 4px;
+  color: #c9c1c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+  user-select: none;
+}
+
+.GridCell_closed {
+  position: relative;
+  cursor: pointer;
+}
+
+.GridCell_closed::after {
+  content: '';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #181717;
+  border-radius: inherit;
+}
+
+.GridCell_flag::after {
+  content: '🚩';
+}
